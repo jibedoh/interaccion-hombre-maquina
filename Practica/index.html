@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Aroma - Cafetería Artesanal</title>
+    <link rel="stylesheet" href="cafeteria.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <div class="nav-content">
+                <div class="logo">
+                    <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+                        <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+                        <line x1="6" y1="1" x2="6" y2="4"></line>
+                        <line x1="10" y1="1" x2="10" y2="4"></line>
+                        <line x1="14" y1="1" x2="14" y2="4"></line>
+                    </svg>
+                    <span class="logo-text">Café Aroma</span>
+                </div>
+                
+                <ul class="nav-menu">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#menu">Menú</a></li>
+                    <li><a href="#sobre">Sobre Nosotros</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+                
+                <button class="btn-primary">Reservar Mesa</button>
+                
+                <button class="mobile-menu-btn" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            
+            <ul class="mobile-menu" id="mobileMenu">
+                <li><a href="#inicio" onclick="toggleMenu()">Inicio</a></li>
+                <li><a href="#menu" onclick="toggleMenu()">Menú</a></li>
+                <li><a href="#sobre" onclick="toggleMenu()">Sobre Nosotros</a></li>
+                <li><a href="#contacto" onclick="toggleMenu()">Contacto</a></li>
+                <li><button class="btn-primary mobile">Reservar Mesa</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Bienvenido a Café Aroma</h1>
+            <p>Descubre el sabor auténtico del café artesanal en un ambiente cálido y acogedor</p>
+            <div class="hero-buttons">
+                <button class="btn-secondary">Ver Menú</button>
+                <button class="btn-outline">Conocer Más</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nuestro Menú</h2>
+                <p>Disfruta de nuestra selección de cafés artesanales y delicias recién horneadas</p>
+            </div>
+            
+            <div class="menu-grid">
+                <div class="menu-card">
+                    <div class="menu-card-image">
+                        <img src="https://images.unsplash.com/photo-1649015005461-9905cb2a183d?w=400" alt="Espresso">
+                    </div>
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3>Espresso</h3>
+                            <span class="price">$3.50</span>
+                        </div>
+                        <p class="category">Café Caliente</p>
+                        <p class="description">Café italiano intenso y aromático</p>
+                        <button class="btn-primary full-width">Ordenar</button>
+                    </div>
+                </div>
+                
+                <div class="menu-card">
+                    <div class="menu-card-image">
+                        <img src="https://images.unsplash.com/photo-1655655555559-70610bfe5598?w=400" alt="Cappuccino">
+                    </div>
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3>Cappuccino</h3>
+                            <span class="price">$4.50</span>
+                        </div>
+                        <p class="category">Café Caliente</p>
+                        <p class="description">Espresso con espuma de leche cremosa</p>
+                        <button class="btn-primary full-width">Ordenar</button>
+                    </div>
+                </div>
+                
+                <div class="menu-card">
+                    <div class="menu-card-image">
+                        <img src="https://images.unsplash.com/photo-1655655555559-70610bfe5598?w=400" alt="Latte">
+                    </div>
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3>Latte</h3>
+                            <span class="price">$4.75</span>
+                        </div>
+                        <p class="category">Café Caliente</p>
+                        <p class="description">Café suave con leche vaporizada</p>
+                        <button class="btn-primary full-width">Ordenar</button>
+                    </div>
+                </div>
+                
+                <div class="menu-card">
+                    <div class="menu-card-image">
+                        <img src="https://images.unsplash.com/photo-1649015005461-9905cb2a183d?w=400" alt="Americano">
+                    </div>
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3>Americano</h3>
+                            <span class="price">$3.75</span>
+                        </div>
+                        <p class="category">Café Caliente</p>
+                        <p class="description">Espresso diluido con agua caliente</p>
+                        <button class="btn-primary full-width">Ordenar</button>
+                    </div>
+                </div>
+                
+                <div class="menu-card">
+                    <div class="menu-card-image">
+                        <img src="https://images.unsplash.com/photo-1675125530909-15213f01a9e1?w=400" alt="Croissant">
+                    </div>
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3>Croissant</h3>
+                            <span class="price">$4.00</span>
+                        </div>
+                        <p class="category">Repostería</p>
+                        <p class="description">Recién horneado y mantecoso</p>
+                        <button class="btn-primary full-width">Ordenar</button>
+                    </div>
+                </div>
+                
+                <div class="menu-card">
+                    <div class="menu-card-image">
+                        <img src="https://images.unsplash.com/photo-1675125530909-15213f01a9e1?w=400" alt="Pastel">
+                    </div>
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3>Pastel de Chocolate</h3>
+                            <span class="price">$5.50</span>
+                        </div>
+                        <p class="category">Repostería</p>
+                        <p class="description">Delicioso pastel casero</p>
+                        <button class="btn-primary full-width">Ordenar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="sobre" class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Sobre Nosotros</h2>
+                <p>Desde 2010, hemos estado sirviendo el mejor café artesanal en la ciudad</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">❤️</div>
+                    <h3>Pasión por el Café</h3>
+                    <p>Cada taza es preparada con dedicación y amor por nuestros baristas expertos</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🏆</div>
+                    <h3>Calidad Premium</h3>
+                    <p>Utilizamos granos de café de origen único, seleccionados cuidadosamente</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">👥</div>
+                    <h3>Ambiente Acogedor</h3>
+                    <p>Un espacio diseñado para que te sientas como en casa</p>
+                </div>
+            </div>
+            
+            <div class="about-text">
+                <p>
+                    En <strong>Café Aroma</strong>, creemos que cada taza de café cuenta una historia. 
+                    Nuestro compromiso es ofrecerte una experiencia única, desde la selección de los 
+                    mejores granos hasta el momento en que disfrutas de tu bebida favorita.
+                </p>
+                <p>
+                    Nuestro equipo de baristas apasionados trabaja diariamente para crear el equilibrio 
+                    perfecto entre sabor, aroma y presentación. Te invitamos a ser parte de nuestra 
+                    comunidad cafetera.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Visítanos</h2>
+                <p>Estamos aquí para servirte. Ven y disfruta de una experiencia única</p>
+            </div>
+            
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">📍</div>
+                    <h3>Dirección</h3>
+                    <p>Av. Principal 123<br>Centro, Ciudad</p>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">📞</div>
+                    <h3>Teléfono</h3>
+                    <p>+1 (555) 123-4567<br>Llamadas y WhatsApp</p>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">✉️</div>
+                    <h3>Email</h3>
+                    <p>info@cafearoma.com<br>reservas@cafearoma.com</p>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">🕐</div>
+                    <h3>Horario</h3>
+                    <p>Lun - Vie: 7:00 - 20:00<br>Sáb - Dom: 8:00 - 21:00</p>
+                </div>
+            </div>
+            
+            <div class="contact-form-container">
+                <h3>Envíanos un mensaje</h3>
+                <form class="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Nombre</label>
+                            <input type="text" placeholder="Tu nombre">
+                        </div>
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" placeholder="tu@email.com">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Mensaje</label>
+                        <textarea rows="4" placeholder="Escribe tu mensaje aquí..."></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary full-width">Enviar Mensaje</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+                            <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+                            <line x1="6" y1="1" x2="6" y2="4"></line>
+                            <line x1="10" y1="1" x2="10" y2="4"></line>
+                            <line x1="14" y1="1" x2="14" y2="4"></line>
+                        </svg>
+                        <span class="logo-text">Café Aroma</span>
+                    </div>
+                    <p>El mejor café artesanal de la ciudad. Preparado con pasión, servido con amor.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#menu">Menú</a></li>
+                        <li><a href="#sobre">Sobre Nosotros</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-social">
+                    <h3>Síguenos</h3>
+                    <p>Únete a nuestra comunidad en redes sociales</p>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon">f</a>
+                        <a href="#" class="social-icon">📷</a>
+                        <a href="#" class="social-icon">🐦</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2026 Café Aroma. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('active');
+        }
+        
+        // Cerrar menú al hacer scroll
+        window.addEventListener('scroll', function() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.remove('active');
+        });
+    </script>
+</body>
+</html>
