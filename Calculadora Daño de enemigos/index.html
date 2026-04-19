@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <script src="main.js"></script>
+    
+    <h1 class="Titulo">Calculadora Daño Enemigos</h1>
+
+    <div class="escenario">
+        <div class="personaje" id="vox">
+            <div class="nombre">Vox</div>
+            <div class="BarraVida">
+                <div id="BarraVida-vox" class="BarraVidaFill"></div>
+            </div>
+            <div class="stats">Vida: <span id="vida-vox">80/80</span></div>
+        </div>
+
+        <div class="personaje" id="Alastor">
+            <div class="nombre">Alastor. Nivel <span id="nivel">1</span></div>
+            <div class="BarraVida">
+                <div id="BarraVida-alastor" class="BarraVidaFill"></div>
+            </div>
+            <div class="stats">Vida: <span id="vida-alastor">50/50</span></div>
+        </div>
+    </div>
+
+    <div id="mensaje" class="caja">Alastor aparece</div>
+
+    <div class="Atacar">
+        <button class="AtacarBoton" onclick="Calcular()">Ataque</button>
+    </div>
+    
+</body>
+</html>

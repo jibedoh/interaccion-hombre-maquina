@@ -1,0 +1,186 @@
+@media(max-width: 768px){
+    .Titulo {
+        font-size: 45px !important;
+        margin: 20px 0;
+    }
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(135deg, #080810, #11112b);
+    color: #e2e8f0;
+
+}
+
+.navbar{
+    background: #080810 !important;
+}
+.nav-link {
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+}
+
+h1, h2, h3, .navbar-brand {
+    font-weight: 700; 
+}
+
+p {
+    font-weight: 400;
+    line-height: 1.6; 
+}
+.Titulo {
+    font-family: 'Sekuya', sans-serif;
+    font-size: 90px;
+    background: linear-gradient(90deg, #22c55e, #06b6d4, #a855f7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin: 30px 0;
+}
+
+
+.carousel-caption {
+    padding: 30px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    
+}
+.carousel-caption h5{
+    text-shadow: 0 0 10px #00f5ff;
+}
+
+.carousel-item img {
+    min-height: 580px;
+    max-height: 700px;
+    object-fit: cover;
+    filter: brightness(0.6) saturate(1.2);
+}   
+.container-fluid img{
+    height: 54px;
+}
+
+.card-img-top { 
+    height: 200px; 
+    object-fit: cover; 
+}
+
+
+#sobre-evento{
+    background: linear-gradient(135deg,
+        rgba(62, 174, 202, 0.13),
+        rgba(191, 0, 255, 0.116) 
+    );
+    border-radius: 50px;
+    
+}
+#sobre-evento h2 {
+    background: linear-gradient(90deg, #00f5ff, #bf00ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.texto-SE{
+    padding: 0rem 5rem;
+}
+
+#artistas{
+    background:#0d0d1a ;
+    color: white;
+}
+#artistas h2{
+    background: linear-gradient(90deg, #00f5ff, #bf00ff, #ff0090);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 2.5rem;
+}
+#artistas .card {
+    background: linear-gradient(135deg,
+        rgba(62, 174, 202, 0.13),
+        rgba(191, 0, 255, 0.116) 
+    );
+    border: none;
+    transition: transform 0.3s ease;
+}
+
+#artistas .card-title {
+    color: white; 
+    font-weight: bold;
+}
+
+#artistas .card-text {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+
+#artistas .card:hover {
+    transform: translateY(-10px);
+    background-color: rgba(0, 0, 0, 0.85);
+    box-shadow: 0 10px 20px rgba(29, 140, 148, 0.5);
+}
+
+.ver-mas {
+    padding: 12px 40px;
+    border-radius: 50px;
+    border: 1px solid #bf00ff;
+    background: transparent;
+    color: white;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.ver-mas:hover {
+    background: linear-gradient(90deg, #00f5ff, #bf00ff);
+    box-shadow: 0 0 20px rgba(191, 0, 255, 0.6);
+    border-color: transparent;
+    transform: scale(1.05);
+}
+#faq h2{
+    background: linear-gradient(90deg, #bf00ff, #ff0090);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.accordion-item{
+    background: #2d2d4e;
+    border: none;
+    border-radius: 14px !important;
+    margin-bottom: 0.75rem;
+    overflow: hidden;
+    color: white;
+}
+.accordion-button{
+    background-color: #444468be !important;
+    color: white !important;
+    font-size: 1.1rem !important;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0.753) !important;
+}
+.accordion-button.collapsed {
+    background-color: #202038dc !important;
+    color: white !important;
+}
+
+.accordion-button::after {
+    filter: brightness(0) invert(1);
+}
+
+
+
+
+
+footer {
+    background: rgb(21, 21, 41);
+    border-top: 3px solid #8A2BE2;
+}
+
+footer h5 {
+    color: #00f5ff;
+    font-size: 1rem;
+    font-weight: 700;
+    text-shadow: 0 0 8px rgba(0,245,255,0.4);
+}
+footer p {
+    font-size: 0.8rem;
+
+}
